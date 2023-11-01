@@ -1,63 +1,24 @@
-package com.xworkz.september.things;
+package com.xworkz.shopping.things;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 
 public class Company {
-	private String companyName;
-	private String position;
+	private String name;
 	private String location;
-	private long contactNum;
-	private Education education;
-
+	private int id;
 	public Company() {
-		System.out.println(".......................");
+		System.out.println("No argument constructor");
 	}
-
-	public Company(String companyName, String position, String location, long contactNum, Education education) {
-		super();
-		this.companyName = companyName;
-		this.position = position;
+	public Company(String name, String location, int id) {
+		this.name = name;
 		this.location = location;
-		this.contactNum = contactNum;
-		this.education = education;
+		this.id = id;
 	}
-
-	public String getCompanyName() {
-		return companyName;
-	}
-
-	public void setCompanyName(String companyName) {
-		this.companyName = companyName;
-	}
-
-	public String getPosition() {
-		return position;
-	}
-
-	public void setPosition(String position) {
-		this.position = position;
-	}
-
-	public String getLocation() {
-		return location;
-	}
-
-	public void setLocation(String location) {
-		this.location = location;
-	}
-
-	public long getContactNum() {
-		return contactNum;
-	}
-
-	public void setContactNum(long contactNum) {
-		this.contactNum = contactNum;
-	}
-
-	public Education getEducation() {
-		return education;
-	}
-
-	public void setEducation(Education education) {
-		this.education = education;
-	}
+	
+	
 
 }
