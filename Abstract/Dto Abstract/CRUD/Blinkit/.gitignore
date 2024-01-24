@@ -2,11 +2,3 @@
 *.class
 *.classpath
 *.settings/
-# Eclipse specific metadata
-.metadata/
-.bin/
-tmp/
-*.tmp
-*.back
-*.swp
-*~.nib
